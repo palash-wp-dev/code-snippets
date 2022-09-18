@@ -1,0 +1,23 @@
+$this->add_control(
+            'form_id',
+            [
+                'label' => esc_html__( 'Select Form', 'staraddons' ),
+                'type' => \Elementor\Controls_Manager::SELECT,
+                'label_block' => true,
+                'options' => $this->getFormShortcode()
+            ]
+        );
+ public function getFormShortcode() {
+        $getForm = get_posts( array(
+            'post_type'  => 'wpcf7_contact_form',
+            'numberposts'  => 499,
+        ) );
+        $formData = [];
+        if ( !empty( $getForm ) && !is_wp_error( $getForm ) ) {
+            foreach ( $getForm as $form ) {
+                $formData[ $form->ID ] = $form->post_title;
+            }
+            return $formData;
+        }
+    }
+ echo do_shortcode('[contact-form-7 id="'.absint( $settings['form_id'] ).'"]');

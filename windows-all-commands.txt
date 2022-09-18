@@ -1,0 +1,31 @@
+for changing the directory to the desktop
+=========================================
+cd desktop
+
+for changing the directory to the c drive
+==========================================
+cd /
+
+for changing the direcotry to the d drive
+=========================================
+cd D:
+
+for going back one step back from the current folder
+====================================================
+cd ..
+
+for displaying all files and folders in a direcotry
+====================================================
+dir
+
+for clearing the screen
+=======================
+cls
+
+for creating a folder
+======================
+mdkir
+
+for creating a text file
+=========================
+notepad
