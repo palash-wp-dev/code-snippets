@@ -1,0 +1,27 @@
+public function getCategories(){
+        $cat_list = [];
+            if ( post_type_exists( 'testimonials' ) ) { 
+            $terms = get_terms( array(
+                'taxonomy'    => 'testimonial-category',
+                'hide_empty'  => true            
+            ) );  
+            
+            foreach($terms as $post) {
+                $cat_list[$post->slug]  = [$post->name];
+            }
+        }  
+        return $cat_list;
+    }
+
+$best_wp = new wp_Query(array(
+                                'post_type'      => 'testimonials',
+                                'posts_per_page' => $settings['per_page'],
+                                'tax_query'      => array(
+                                    array(
+                                        'taxonomy' => 'testimonial-category',
+                                        'field'    => 'slug', //can be set to ID
+                                        'terms'    => $settings['testimonial_category'] //if field is ID you can reference by cat/term number
+                                    ),
+                                )
+                                                                               
+                        ));

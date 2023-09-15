@@ -8,7 +8,7 @@ cd /
 
 for changing the direcotry to the d drive
 =========================================
-cd D:
+cd D: or just type D: (while running as a administrator)
 
 for going back one step back from the current folder
 ====================================================
@@ -22,9 +22,9 @@ for clearing the screen
 =======================
 cls
 
-for creating a folder
-======================
-mdkir
+for creating a new folder/directory
+===================================
+mkdir
 
 for creating a text file
 =========================
