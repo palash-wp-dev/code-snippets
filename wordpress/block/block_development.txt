@@ -1,0 +1,1 @@
+npx @wordpress/create-block@latest copyright-date-block --variant=dynamic // this will create a block plugin

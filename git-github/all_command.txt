@@ -1,0 +1,23 @@
+git config --global user.name "user_name"
+git config --global user.email "user_email"
+git config --list
+git config user.name
+git config user.email
+
+git init // for initializing git into a folder
+git status // for checking current git status
+git add --all // for adding or staging all files for tracking in local git
+git add . // for adding or staging all files in a folder for tracking in local git
+git add filename // for adding or stagin a specific file for tracking in local git
+git add *.fileExtension // for adding all files of a specific file types for tracking in local git
+git rm --cached filename // to unstage files from git
+
+git restore // for going back to the previouis stage after the adding process
+git diff // for checking the difference of files
+
+git commit -m "A clear message about the commit" // this command use to make commit all the things to the local repository
+git log // with this command we can check what commit we have made
+
+git reset --soft HEAD^ // this command is used to reset the commit and go back to the staging area
+git reset Head^ // this commnad is used to reset and go back to the working directory
+git reset --hard HEAD^ // this command is used to reset the commit and going back to the last commit
