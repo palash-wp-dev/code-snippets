@@ -1,8 +1,14 @@
 git config --global user.name "user_name"
 git config --global user.email "user_email"
 git config --list
+git config --local --list
+git config --global --list
+git config --system --list
 git config user.name
 git config user.email
+git config --global --unset user.name
+git config --global --unset user.email
+git config --global user.name "Shahadat-Hossain"
 
 git init // for initializing git into a folder
 git status // for checking current git status
@@ -17,6 +23,11 @@ git diff // for checking the difference of files
 
 git commit -m "A clear message about the commit" // this command use to make commit all the things to the local repository
 git log // with this command we can check what commit we have made
+git log --oneline // this will display commmit history in one line
+
+git show // this 
+git show commit_id // this 
+git show HEAD // this will show
 
 git reset --soft HEAD^ // this command is used to reset the commit and go back to the staging area
 git reset Head^ // this commnad is used to reset and go back to the working directory
