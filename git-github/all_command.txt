@@ -11,9 +11,11 @@ git config --global --unset user.email
 git config --global user.name "Shahadat-Hossain"
 
 git init // for initializing git into a folder
+git clone // for downloading a repo from the github to your machine
 git status // for checking current git status
-git add --all // for adding or staging all files for tracking in local git
+git add --all or git add -A // for adding or staging all files for tracking in local git
 git add . // for adding or staging all files in a folder for tracking in local git
+git add * // for adding all accept the deleted files or folder
 git add filename // for adding or stagin a specific file for tracking in local git
 git add *.fileExtension // for adding all files of a specific file types for tracking in local git
 git rm --cached filename // to unstage files from git
@@ -29,6 +31,21 @@ git show // this
 git show commit_id // this 
 git show HEAD // this will show
 
+git reset // for reseting everything except the deleted files
+git reset --hard // for reseting everything including the deleted files
 git reset --soft HEAD^ // this command is used to reset the commit and go back to the staging area
 git reset Head^ // this commnad is used to reset and go back to the working directory
 git reset --hard HEAD^ // this command is used to reset the commit and going back to the last commit
+
+git branch // for checking all the branches
+git branch branch name // for creating a new branch
+git checkout branch name // for changing the branch
+git merge branch name -m "comments" // for merging two branch together
+git push origin branch name // for uploding the project from local to live or remote -- after clonning the repo
+git remote add origin repo_address // for uploading a repository from local without clonning the repo
+git push -u origin branch_name // for uploading a repository from local without clonning the repo
+git fetch // for downloading all the changes from the live
+git merge // for downloading all the files from the live
+git pull // it executes what fetch and merge does together
+git push origin branch name // for pushing the repo in live on github in a specific branch of a repo
+git push // for pushing the repo in live on github in a repo which does not have more than one branch
