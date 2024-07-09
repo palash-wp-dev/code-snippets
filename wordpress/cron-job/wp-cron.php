@@ -24,6 +24,8 @@ class CustomFieldsInAccountDetails
 		add_action( 'woocommerce_edit_account_form_start', [ $this, 'add_dob_field_to_account_details' ] );
 		// Save the date of birth field
 		add_action( 'woocommerce_save_account_details', [ $this, 'save_dob_field_in_account_details' ] );
+		// Add custom cron schedule for every minute
+		add_filter( 'cron_schedules', [ $this, 'wanp_add_every_minute_schedule' ] );
 		// Hook the function to run daily (you may want to set up a cron job for this)
 		add_action( 'wp_loaded', [ $this, 'schedule_daily_event' ] );
 		// Hook the function to our scheduled event
@@ -31,6 +33,15 @@ class CustomFieldsInAccountDetails
 
 		$this->points_for_birthday = get_option( 'pointsForBirthday' );
 		$this->points_for_birthday = ! empty( $this->points_for_birthday['pointAmount'] ) ? intval( $this->points_for_birthday['pointAmount'] ) : 0;
+	}
+
+
+	public function wanp_add_every_minute_schedule($schedules) {
+	    $schedules['wanp_every_minute'] = array(
+	        'interval' => 60,
+	        'display' => __('Every Minute')
+	    );
+	    return $schedules;
 	}
 
 	/**
