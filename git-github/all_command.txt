@@ -28,7 +28,7 @@ git log // with this command we can check what commit we have made
 git log --oneline // this will display commmit history in one line
 
 git show // this 
-git show commit_id // this 
+git show commit_id // this will show details about a specific commit
 git show HEAD // this will show
 
 git reset // for reseting everything except the deleted files
@@ -36,6 +36,8 @@ git reset --hard // for reseting everything including the deleted files
 git reset --soft HEAD^ // this command is used to reset the commit and go back to the staging area
 git reset Head^ // this commnad is used to reset and go back to the working directory
 git reset --hard HEAD^ // this command is used to reset the commit and going back to the last commit
+
+git checkout file_name // it will remove modifed or changes from staging
 
 git branch // for checking all the branches
 git branch branch name // for creating a new branch
@@ -53,6 +55,7 @@ git push // for pushing the repo in live on github in a repo which does not have
 
 
 //** Git convention or standard **//
+
 1. Always make commit
 2. Write clear and conceise message for commit
 3. Write no more than 50 characters of message for commit
