@@ -19,4 +19,4 @@ e.g. composer remove psr/log
 
 composer dump-autoload // it will 
 
-composer install --no-dev --optimize-autoloader // it will automatically add vendor folder with necessary dependancy based on composer.json file
+composer install --no-dev --optimize-autoloader // it will automatically add vendor folder with necessary dependancy 

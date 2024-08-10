@@ -49,3 +49,12 @@ git merge // for downloading all the files from the live
 git pull // it executes what fetch and merge does together
 git push origin branch name // for pushing the repo in live on github in a specific branch of a repo
 git push // for pushing the repo in live on github in a repo which does not have more than one branch
+
+
+
+//** Git convention or standard **//
+1. Always make commit
+2. Write clear and conceise message for commit
+3. Write no more than 50 characters of message for commit
+4. Write commit message in imperative mode. For example: use Add, Fix, Update instead of Added, Fixed, Updated
+5. Describe commit message in detail. use '-' before writing description message 
