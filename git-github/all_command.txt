@@ -18,6 +18,7 @@ git add . // for adding or staging all files in a folder for tracking in local g
 git add * // for adding all accept the deleted files or folder
 git add filename // for adding or stagin a specific file for tracking in local git
 git add *.fileExtension // for adding all files of a specific file types for tracking in local git
+git add . && git commit -m "message" // add and commit at the same time
 git rm --cached filename // to unstage files from git
 
 git restore // for going back to the previouis stage after the adding process
@@ -37,7 +38,8 @@ git reset --soft HEAD^ // this command is used to reset the commit and go back t
 git reset Head^ // this commnad is used to reset and go back to the working directory
 git reset --hard HEAD^ // this command is used to reset the commit and going back to the last commit
 
-git checkout file_name // it will remove modifed or changes from staging
+git checkout file_name // by this we can go to specific commit
+git checkout master // with this we can go to the last commit
 
 git branch // for checking all the branches
 git branch branch name // for creating a new branch
