@@ -68,3 +68,30 @@ git push // for pushing the repo in live on github in a repo which does not have
 2. git config --global --unset alias.st 
 3. git config --global --list
 4. git config --global alias.s "status" // this will make git status commnad to git s
+
+
+//** Markdown Formats **//
+1. Enter double spaces to creae a new line or use <br />
+2. Enter --- or <hr> to create a line
+3. Enter # to create a h1 or use <h1> html tag. Use ##, ###, ####, ##### to create h2, h3, h4
+4. Enter _some text_ or use <i> tag to create italic
+5. Enter __some text__ or use <b> tag to create bold
+6. Enter ~~some text~~ or <del> tag to create a strikethrough
+7. Enter `some code` to create a inline code.
+8. Enter ```some multiline codes``` to create a multiline code.
+e.g. 
+
+```html
+<h1></h1>
+```
+
+```css
+h1 {
+	color: red;
+}
+```
+
+```javascript
+console.log('Hello World');
+```
+
