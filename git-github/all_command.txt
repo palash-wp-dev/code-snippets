@@ -117,6 +117,27 @@ create tasklist
 create automatic link
 http://www.example.com
 
-create disabel link
+create disable link
 `http://www.example.com`
 
+create link in a text
+[some text](http://www.example.com)
+
+we can create link and use it afterwards
+[some link] : http://www.example.com
+
+[some text][some link]
+
+use image from a folder called images
+![alt text](./images/image.jpg) 
+
+or we can use the regular <img /> tag of html
+<img src="./images/image.jpg" width="200" height="200" title="some image" alt="alt text" />
+
+copy any emoji from anywhere and just have paste it to show emoji
+
+how to create table in markdown
+| Name | Email |
+| ------- | -------- |
+|Palash | palash@gmail.com |
+| John | john@gmail.com |
