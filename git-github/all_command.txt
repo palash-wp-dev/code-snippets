@@ -95,3 +95,28 @@ h1 {
 console.log('Hello World');
 ```
 
+show item in order list
+1. item1
+2. item2
+		1. sub-item1
+		2. sub-item2
+3 item3		
+
+show item in unordered list
+- item1
+- item2
+	- sub-item1
+	- sub-item2
+- item3
+
+create tasklist
+- [x] task1
+- [x] task2
+- [] uncomplete task
+
+create automatic link
+http://www.example.com
+
+create disabel link
+`http://www.example.com`
+
