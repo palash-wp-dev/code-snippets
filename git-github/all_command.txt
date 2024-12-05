@@ -143,5 +143,5 @@ how to create table in markdown
 | John | john@gmail.com |
 
 
-git remote or git remote -v // check remote connection
+git remote or git remote -v // check wheter a local repo is connected to a remote connection
 rm -rf repo-name // delete repo from local directory which was connected to global github repo
