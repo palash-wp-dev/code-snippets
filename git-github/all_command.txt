@@ -145,3 +145,5 @@ how to create table in markdown
 
 git remote or git remote -v // check wheter a local repo is connected to a remote connection
 rm -rf repo-name // delete repo from local directory which was connected to global github repo
+git branch -d branch_name // this will delete a specific branch in the local git
+git checkout -b "branch_name" // this will create a new branch in the local git and will also move to that branch
