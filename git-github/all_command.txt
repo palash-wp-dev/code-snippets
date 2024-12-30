@@ -42,10 +42,10 @@ git checkout file_name // by this we can go to specific commit
 git checkout master // with this we can go to the last commit
 
 git branch // for checking all the branches
-git branch branch name // for creating a new branch
-git checkout branch name // for changing the branch
-git merge branch name -m "comments" // for merging two branch together
-git push origin branch name // for uploding the project from local to live or remote -- after clonning the repo
+git branch branch_name // for creating a new branch
+git checkout branch_name // for changing the branch
+git merge branch_name -m "comments" // for merging two branch together
+git push origin branch_name // for uploding the project from local to live or remote -- after clonning the repo
 git remote add origin repo_address // for uploading a repository from local without clonning the repo
 git push -u origin branch_name // for uploading a repository from local without clonning the repo
 git fetch // for downloading all the changes from the live
