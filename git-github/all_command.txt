@@ -45,9 +45,9 @@ git branch // for checking all the branches
 git branch branch_name // for creating a new branch
 git checkout branch_name // for changing the branch
 git merge branch_name -m "comments" // for merging two branch together
-git push origin branch_name // for uploding the project from local to live or remote -- after clonning the repo
+git push origin branch_name // for uploding the project from local to live or remote -- For one-time pushes or if you’re working on a branch you don’t plan to push or pull frequently.
 git remote add origin repo_address // for uploading a repository from local without clonning the repo
-git push -u origin branch_name // for uploading a repository from local without clonning the repo
+git push -u origin branch_name // for uploading a repository from local to live or remote -- For branches you’ll work on regularly and want the convenience of not typing the remote and branch names each time. after this you only needs to use just "git push" only.
 git fetch // for downloading all the changes from the live
 git merge // for downloading all the files from the live
 git pull // it executes what fetch and merge does together
