@@ -25,6 +25,7 @@ git restore // for going back to the previouis stage after the adding process
 git diff // for checking the difference of files
 
 git commit -m "A clear message about the commit" // this command use to make commit all the things to the local repository
+git commit -am "A clear message about the commit" // this is alos used to make a commit 
 git log // with this command we can check what commit we have made
 git log --oneline // this will display commmit history in one line
 
@@ -44,6 +45,7 @@ git checkout master // with this we can go to the last commit
 git branch // for checking all the branches
 git branch branch_name // for creating a new branch
 git checkout branch_name // for changing the branch
+git switch branch_name // for chanining the branch
 git merge branch_name -m "comments" // for merging two branch together
 git push origin branch_name // for uploding the project from local to live or remote -- For one-time pushes or if you’re working on a branch you don’t plan to push or pull frequently.
 git remote add origin repo_address // for uploading a repository from local without clonning the repo
