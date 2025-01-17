@@ -1,0 +1,1 @@
+php --version // for checking is php installed in your windows computer

@@ -1,3 +1,5 @@
+<?php 
+
 array_combine()
 count()
 array_count_values()

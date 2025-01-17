@@ -152,5 +152,5 @@ git checkout -b "branch_name" // this will create a new branch in the local git 
 
 how to contribute to another's github repository
 ================================================
-1. Fork -> git clone -> make pull request
+1. Fork -> git clone -> make changes -> push the repo -> finally make pull request
 
