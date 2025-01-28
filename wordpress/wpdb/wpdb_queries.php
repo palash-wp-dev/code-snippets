@@ -5,8 +5,7 @@
 $first_table_id = $wpdb->insert_id;
 
 
-/* query to select methods
-    in WordPress */
+/* query to select methods in WordPress */
 
 // $wpdb->get_results() : let’s query our database for the IDs and titles of the four most recent posts, ordered by comment count (in descending order)
 $posts = $wpdb->get_results("SELECT ID, post_title FROM $wpdb->posts WHERE post_status = 'publish'
