@@ -23,6 +23,7 @@ composer outdate // it will show all outdated dependencies of the project
 
 composer remove // it will remove dependency from the composer
 e.g. composer remove psr/log
+e.g. composer remove phpunit/phpunit --dev // this will remove the package from the development version
 
 composer dump-autoload // ensures that Composer’s autoloader is up-to-date with your project structure.
 
