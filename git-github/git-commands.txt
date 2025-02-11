@@ -53,8 +53,10 @@ git push -u origin branch_name // for uploading a repository from local to live 
 git fetch // for downloading all the changes from the live
 git merge // for downloading all the files from the live
 git pull // it executes what fetch and merge does together
+git pull --rebase origin main // This command is used to update your local branch with the latest changes from the remote branch (main) while keeping your commits on top.
 git push origin branch name // for pushing the repo in live on github in a specific branch of a repo
 git push // for pushing the repo in live on github in a repo which does not have more than one branch
+git push -f origin main // If you don’t care about remote changes and want to overwrite everything, you can force push: 
 
 
 
