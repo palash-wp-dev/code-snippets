@@ -45,6 +45,7 @@ git checkout master // with this we can go to the last commit
 
 git branch // for checking all the branches
 git branch branch_name // for creating a new branch
+git branch -m "branch_name" // for changing the branch name
 git checkout branch_name // for changing the branch
 git switch branch_name // for chanining the branch
 git merge branch_name -m "comments" // for merging two branch together
