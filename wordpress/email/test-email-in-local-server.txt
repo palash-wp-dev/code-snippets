@@ -1,1 +1,19 @@
+1. Open your terminal and run: for ubuntu
+wget https://github.com/mailhog/MailHog/releases/latest/download/MailHog_linux_amd64
 
+2. Rename it and make it executable:
+mv MailHog_linux_amd64 MailHog
+chmod +x MailHog
+
+3. Start MailHog by running:
+./MailHog
+
+4. SMTP server listens on localhost:1025, so visit this link to check email
+
+5. add this below code to trigger the email
+add_action('phpmailer_init', function($phpmailer) {
+    $phpmailer->isSMTP();
+    $phpmailer->Host = 'localhost';
+    $phpmailer->Port = 1025;
+    $phpmailer->SMTPAuth = false;
+});
