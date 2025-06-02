@@ -58,7 +58,7 @@ git remote add origin repo_address // for linking a repository from local withou
 git push -u origin branch_name // for uploading a repository from local to live or remote -- For branches you’ll work on regularly and want the convenience of not typing the remote and branch names each time. after this you only needs to use just "git push" only.
 git fetch // for downloading all the changes from the live
 git merge // for downloading all the files from the live
-git pull // it executes what fetch and merge does together
+git pull // it executes what fetch and merge does together (it only gets updated code from a specific branch)
 git pull --rebase origin main // This command is used to update your local branch with the latest changes from the remote branch (main) while keeping your commits on top.
 git push origin branch name // for pushing the repo in live on github in a specific branch of a repo
 git push // for pushing the repo in live on github in a repo which does not have more than one branch
